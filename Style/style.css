@@ -781,10 +781,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: red;
-}
-
 body {
   height: 100%;
   min-height: 100vh;
