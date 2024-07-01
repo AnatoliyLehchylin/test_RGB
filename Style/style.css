@@ -251,6 +251,7 @@
 @media (max-width: 500px) {
   .content-left .zero-wrap {
     margin-bottom: 16px;
+    width: 290px;
   }
 }
 .content-left .zero-wrap .zero {
