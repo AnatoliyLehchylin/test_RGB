@@ -1,0 +1,88 @@
+.programs {
+  display: block;
+
+  .html {
+    position: absolute;
+    top: 35.81px;
+    left: 480.8px;
+
+    .point-html {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #F16529;
+      top: 19.65px;
+      left: 107.28px;
+    }
+  }
+
+  .css {
+    position: absolute;
+    top: 135.92px;
+    left: 400.8px;
+
+    .point-css {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #2965F1;
+      top: -3px;
+      left: 72.4px;
+    }
+  }
+
+  .js {
+    position: absolute;
+    top: 198.2px;
+    left: 506.28px;
+
+    .point-js {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #F0BE25;
+      top: 19px;
+      left: 85.4px;
+    }
+  }
+
+  .sublime {
+    position: absolute;
+    top: 278px;
+    left: 403px;
+
+    .point-sublime {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #FF9800;
+      top: -14px;
+      left: 56px;
+    }
+  }
+
+  .VC {
+    position: absolute;
+    top: 341px;
+    left: 478px;
+
+    .point-VC {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #48AEF3;
+      top: 63px;
+      left: 81px;
+    }
+  }
+
+  @media (max-width: 1399px) {
+    display: none;
+  }
+}
+

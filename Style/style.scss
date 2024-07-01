@@ -1,0 +1,172 @@
+@import "reset.css";
+@import "variables";
+@import "header";
+@import "content-left";
+@import "content-right";
+@import "aside-programs";
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: red;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Gilroy', sans-serif;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    z-index: -1;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at top left, $left-top-start 0%, $left-top-mid 40%, $left-top-end 100%);
+  }
+
+  &::after {
+    top: 0;
+    right: 0;
+    background: radial-gradient(circle at top right, $right-top-start 0%, $right-top-mid 60%, $right-top-end 100%);
+    background-size: 100% 110%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto 27px auto;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .description-wrap-mobile {
+    display: none;
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      width: 224px;
+      height: 172px;
+    }
+
+    .chapter-wrap {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 22px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .img-wrap {
+        display: flex;
+        align-items: center;
+        min-width: 51px;
+        min-height: 49.27px;
+        margin-right: 14px;
+      }
+
+      .chapter-text-wrap {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 15.6px;
+
+          span {
+            color: #4252D1;
+          }
+        }
+
+        .text {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 0 16px 0;
+  font-size: 125px;
+  color: transparent;
+  -webkit-text-stroke: 1.6px rgba(255, 255, 255, 0.05);
+  font-weight: 800;
+
+  @media (max-width: 1440px) {
+    font-size: 93px;
+  }
+
+  @media (max-width: 1040px) {
+    font-size: 68px;
+  }
+
+  @media (max-width: 780px) {
+    font-size: 56px;
+  }
+
+  @media (max-width: 630px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+
+
+

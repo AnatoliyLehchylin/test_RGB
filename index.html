@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Test_RGB_Lehchylin</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+
+        <div class="logo-wrap">
+            <div class="logo">
+                <img src="Images/Shape.png" alt="Logo">
+            </div>
+            <div class="name-wrapper">
+                <img src="Images/POWERCODE.png" alt="Name-up">
+                <img src="Images/ACADEMY.png" alt="Name-down">
+            </div>
+        </div>
+
+        <div class="date-wrap">
+            <div class="date">
+                <div class="img-wrap">
+                    <img src="Images/calendar.png" alt="calendar">
+                </div>
+                <p>28 декабря</p>
+            </div>
+            <div class="date">
+                <div class="img-wrap">
+                    <img src="Images/clock.png" alt="clock">
+                </div>
+                <p>3,5 часа</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content-left">
+
+            <div class="vebinar">
+                <div class="circle-wrap">
+                    <img src="Images/Vector-circle.png" alt="circle">
+                </div>
+                <p class="vebinar-text">Вебинар</p>
+            </div>
+
+            <p class="frontend-text">FRONT-END</p>
+
+            <div class="zero-wrap">
+                <div class="zero">
+                    <p class="zero-content">С НУЛЯ</p>
+                </div>
+                <p class="zero-text">легкий старт в IT профессии</p>
+            </div>
+
+            <p class="main-text">Узнайте какими
+                <span>навыками должен обладать фронтенд разработчик в 2022 году</span> и
+                как начать карьеру в востребованной профессии </p>
+
+            <div class="description-wrap">
+                <div class="chapter-wrap">
+                    <div class="img-wrap">
+                        <img src="Images/Cyril.png" alt="Cyril">
+                    </div>
+                    <div class="chapter-text-wrap">
+                        <p class="title">КИРИЛЛ <span>КАСАТОНОВ</span></p>
+                        <p class="text">6 лет коммерческого опыта с такими компаниями как Mercedes-Benz и другими
+                            крупными корпорациями</p>
+                    </div>
+                </div>
+
+                <div class="chapter-wrap">
+                    <div class="img-wrap">
+                        <img src="Images/box.png" alt="Box">
+                    </div>
+                    <div class="chapter-text-wrap">
+                        <p class="title">Бонус за регистрацию</p>
+                        <p class="text">PDF-файл "5 преимуществ профессии фронтенд разработчика" </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-right">
+            <div class="form-wrap">
+                <p class="form-title">Запишитесь <span>бесплатно</span> и получите подарок</p>
+                <form id="form">
+                    <input class="input-field" type="text" name="name" placeholder="Ваше имя и фамилия">
+                    <input id="phone" class="input-field" type="tel" name="tel" placeholder="Ваш номер телефона">
+                    <input class="input-field" type="email" name="email" placeholder="Ваш email">
+                    <button class="button" type="submit">Записаться бесплатно</button>
+                </form>
+                <div id="errorMessages" class="error"></div>
+                <p id="responseMessages" class="response"></p>
+                <p id="loader" class="loader"></p>
+                <p class="link">Нажимая на кнопку я соглашаюсь с <span><a
+                        href="#">политикой конфиденциальности</a></span>
+                </p>
+            </div>
+
+            <div class="programs">
+                <div class="html">
+                    <img src="Images/html.png" alt="html">
+                    <div class="point-html"></div>
+                </div>
+                <div class="css">
+                    <img src="Images/css.png" alt="css">
+                    <div class="point-css"></div>
+                </div>
+                <div class="js">
+                    <img src="Images/javascript.png" alt="js">
+                    <div class="point-js"></div>
+                </div>
+                <div class="sublime">
+                    <img src="Images/sublime.png" alt="sublime">
+                    <div class="point-sublime"></div>
+                </div>
+                <div class="VC">
+                    <img src="Images/Visual_Studio.png" alt="VC">
+                    <div class="point-VC"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="description-wrap-mobile">
+
+            <div class="chapter-wrap">
+                <div class="img-wrap">
+                    <img src="Images/box.png" alt="Box">
+                </div>
+                <div class="chapter-text-wrap">
+                    <p class="title">Бонус за регистрацию</p>
+                    <p class="text">PDF-файл "5 преимуществ профессии веб-дизайнера" </p>
+                </div>
+            </div>
+
+            <div class="chapter-wrap">
+                <div class="img-wrap">
+                    <img src="Images/Cyril.png" alt="Cyril">
+                </div>
+                <div class="chapter-text-wrap">
+                    <p class="title">КИРИЛЛ <span>КАСАТОНОВ</span></p>
+                    <p class="text">6 лет коммерческого опыта с такими  компаниями как Mercedes-Benz и другими крупными корпорациями</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    FRONT-END DEVELOPER
+</footer>
+
+<script src="./index.js"></script>
+</body>
+</html>
